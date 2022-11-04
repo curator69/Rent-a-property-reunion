@@ -6,25 +6,25 @@ const Body = () => {
   // dates filter function
   const datefilter = (item) => {
     const result = Data.filter((curdata) => {
-      if (item == 0) {
+      if (item === 0) {
         return Data;
       }
-      return curdata.date == item;
+      return curdata.date === item;
     });
     setInfo(result);
   };
   // filtering price with if and else
   const pricefilter = (item) => {
     const result = Data.filter((curdata) => {
-      if (item == 1000) {
+      if (item === 1000) {
         return curdata.price < item;
-      } else if (item == 2000) {
+      } else if (item === 2000) {
         return curdata.price < item && curdata.price >= 1000;
-      } else if (item == 3000) {
+      } else if (item === 3000) {
         return curdata.price > 2000 && curdata.price <= 3500;
-      } else if (item == 4000) {
+      } else if (item === 4000) {
         return curdata.price > 3500;
-      } else if (item == 0) {
+      } else if (item === 0) {
         return Data;
       }
     });
@@ -35,12 +35,12 @@ const Body = () => {
     const result = Data.filter((curdata) => {
       return curdata.location === item;
     });
-    item == "" ? setInfo(Data) : setInfo(result);
+    item === "" ? setInfo(Data) : setInfo(result);
   };
   // property type filter
   const typefilter = (item) => {
     const result = Data.filter((curdata) => {
-      if (item == 0) {
+      if (item === 0) {
         return Data;
       }
       return curdata.type === item;

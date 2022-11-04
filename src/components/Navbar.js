@@ -77,7 +77,7 @@ const Navbar = () => {
                 return (
                   <div key={idx}>
                     <a
-                      className="bg-white/80 lg:my-6 pt-1 pb-1 pr-2 pl-2 font-semibold text-center hover:bg-orange-200 focus-within:bg-orange-200 lg:bg-transparent text-black block py-2 lg:text-black hover:text-orange-600 focus-within:text-orange-600 lg:p-0 rounded"
+                      className="bg-white/80 lg:my-6 p-4 font-semibold text-center hover:bg-orange-200 focus-within:bg-orange-200 lg:bg-transparent text-black block py-2 lg:text-black hover:text-orange-600 focus-within:text-orange-600 lg:p-0 rounded"
                       aria-current="page"
                       href={value.add}
                     >
